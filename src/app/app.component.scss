@@ -64,3 +64,19 @@
   }
 }
 
+@media  screen and (max-width: 500px) {
+  .app {
+    &__header {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__main {
+      height: 75vh;
+    }
+
+    &__btn {
+      height: 40px;
+    }
+  }
+}
