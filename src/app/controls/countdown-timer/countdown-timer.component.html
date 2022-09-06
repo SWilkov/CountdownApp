@@ -1,0 +1,32 @@
+<div class="timer">
+  <div class="timer__container">
+      <div class="timer__item">
+          <label for="days" class="timer__label"
+            [ngClass]="{ 'timer__label--light': (theme === 'light'), 'timer__label--dark': (theme === 'dark') }">Days</label>
+          <input id="days" type="text" readonly class="timer__input" [value]="days" 
+            [ngClass]="{ 'timer__input--light': (theme === 'light'), 'timer__input--dark': (theme === 'dark') }">
+      </div>
+
+      <div class="timer__item">
+          <label for="hours" class="timer__label"
+            [ngClass]="{ 'timer__label--light': (theme === 'light'), 'timer__label--dark': (theme === 'dark') }">Hours</label>
+          <input id="hours" type="text" readonly class="timer__input" [value]="hours" 
+            [ngClass]="{ 'timer__input--light': (theme === 'light'), 'timer__input--dark': (theme === 'dark') }"/>            
+      </div>
+
+      <div class="timer__item">
+          <label for="minutes" class="timer__label"
+            [ngClass]="{ 'timer__label--light': (theme === 'light'), 'timer__label--dark': (theme === 'dark') }">Minutes</label>
+          <input id="minutes" type="text" readonly class="timer__input" [value]="minutes" 
+            [ngClass]="{ 'timer__input--light': (theme === 'light'), 'timer__input--dark': (theme === 'dark') }"/>            
+      </div>
+
+      <div class="timer__item"> 
+          <label for="seconds" class="timer__label"
+            [ngClass]="{ 'timer__label--light': (theme === 'light'), 'timer__label--dark': (theme === 'dark') }">Seconds</label>
+          <input id="seconds" type="text" readonly class="timer__input" [value]="seconds" 
+            [ngClass]="{ 'timer__input--light': (theme === 'light'), 'timer__input--dark': (theme === 'dark') }"/>        
+      </div>
+  </div>
+</div>
+
